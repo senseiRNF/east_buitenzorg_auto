@@ -1,4 +1,4 @@
-import 'package:east_buitenzorg_auto/pages/splash_page/display_splash_page.dart';
+import 'package:east_buitenzorg_auto/controllers/splash_page_controller.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'East Buitenzorg Auto',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xff8b0000)),
+        fontFamily: 'Oswald',
       ),
       home: const SplashPage(),
     );

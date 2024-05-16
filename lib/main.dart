@@ -1,4 +1,5 @@
 import 'package:east_buitenzorg_auto/controllers/splash_page_controller.dart';
+import 'package:east_buitenzorg_auto/services/local/constant_variables.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,9 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'East Buitenzorg Auto',
+      title: ConstantVariables.appName,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xff8b0000)),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: ConstantVariables.primaryColor,
+        ),
         fontFamily: 'Oswald',
       ),
       home: const SplashPage(),

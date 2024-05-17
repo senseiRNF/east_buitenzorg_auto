@@ -5,5 +5,7 @@ class ConstantVariables {
 
   static String imgPath = "assets/images";
 
+  static String typeKey = "type";
+
   static Color primaryColor = const Color(0xff8b0000);
 }

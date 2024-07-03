@@ -1,4 +1,4 @@
-import 'package:east_buitenzorg_auto/view_pages/splash_view_page.dart';
+import 'package:east_buitenzorg_auto/core_modules/splash_module/splash_view_page.dart';
 import 'package:flutter/material.dart';
 
 class SplashInitViewFragment extends SplashViewPage {

@@ -1,13 +1,13 @@
-import 'package:east_buitenzorg_auto/controllers/splash_page_controller.dart';
+import 'package:east_buitenzorg_auto/core_modules/splash_module/splash_path.dart';
 import 'package:east_buitenzorg_auto/services/local/constant_variables.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const EastBuitenzorgAuto());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class EastBuitenzorgAuto extends StatelessWidget {
+  const EastBuitenzorgAuto({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(
           seedColor: ConstantVariables.primaryColor,
         ),
-        fontFamily: 'Oswald',
+        fontFamily: 'Rubik',
       ),
-      home: const SplashPage(),
+      home: const SplashPath(),
     );
   }
 }

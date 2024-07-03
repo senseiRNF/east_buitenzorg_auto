@@ -1,21 +1,15 @@
 import 'package:east_buitenzorg_auto/controllers/home_page_controller.dart';
+import 'package:east_buitenzorg_auto/core_modules/splash_module/splash_path.dart';
 import 'package:east_buitenzorg_auto/services/local/constant_variables.dart';
 import 'package:east_buitenzorg_auto/services/local/dialog_functions.dart';
 import 'package:east_buitenzorg_auto/services/local/local_shared_preferences.dart';
 import 'package:east_buitenzorg_auto/services/local/route_functions.dart';
-import 'package:east_buitenzorg_auto/view_pages/splash_fragments/splash_init_view_fragment.dart';
-import 'package:east_buitenzorg_auto/view_pages/splash_fragments/splash_intro_view_fragment.dart';
-import 'package:east_buitenzorg_auto/view_pages/splash_view_page.dart';
+import 'package:east_buitenzorg_auto/core_modules/splash_module/fragments/splash_init_fragment.dart';
+import 'package:east_buitenzorg_auto/core_modules/splash_module/fragments/splash_intro_fragment.dart';
+import 'package:east_buitenzorg_auto/core_modules/splash_module/splash_view_page.dart';
 import 'package:flutter/material.dart';
 
-class SplashPage extends StatefulWidget {
-  const SplashPage({super.key});
-
-  @override
-  State<SplashPage> createState() => SplashPageController();
-}
-
-class SplashPageController extends State<SplashPage> {
+class SplashController extends State<SplashPath> {
   int indexView = 0;
 
   late StatelessWidget activeWidget;
